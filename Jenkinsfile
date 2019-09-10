@@ -11,5 +11,12 @@ pipeline {
         readManifest(file: 'a\'b\'c', text: 'abc')
       }
     }
+    stage('FKAY') {
+      steps {
+        sh '''ls -l
+pwd
+'''
+      }
+    }
   }
 }
